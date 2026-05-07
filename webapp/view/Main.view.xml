@@ -1,0 +1,12 @@
+
+<mvc:View
+  controllerName="com.grid.alvdemo.controller.Main"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:alv="com.grid.alvdemo.control">
+<Page id="page" title="{i18n>title}">
+  <VBox id="_IDGenVBox" width="100%">
+    <alv:Table id="alvTable" title="Custom ALV Table" />
+  </VBox>
+</Page>
+</mvc:View>

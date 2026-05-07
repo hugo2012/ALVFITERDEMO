@@ -1,0 +1,58 @@
+ .columnRow .moveButtons {
+    opacity: 0;
+    pointer-events: none;
+}  
+
+/*  .columnRow:hover .moveButtons {
+    opacity: 1;
+    pointer-events: auto;
+}  */
+.moveButtons .sapMBtn {
+    margin-left: 4px;
+}
+
+/* hide by default */
+/*  .columnRow .moveButtons {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}  */
+
+/* show ONLY when selected */
+.columnRow.sapMLIBSelected .moveButtons {
+    opacity: 1;
+    pointer-events: auto;
+     transition: transform 0.2s ease;
+}
+
+/* .columnRow {
+    transition: transform 0.2s ease;
+} */
+
+.sapUiDnDDragging {
+    opacity: 0.5;
+}
+
+.sapUiDnDDragGhost {
+    background: #fff;
+    border: 1px dashed #ccc;
+    padding: 8px;
+}
+
+.sapUiDnDDropIndicator {
+    height: 2px;
+    background-color: #0a6ed1; /* SAP blue */
+}
+
+.cusGrpTableRowInfo  {
+    background-color: #e8f1fb !important;
+}
+.cusGrpSubtotalTableRowWarning {
+    background-color: #fff7d6 !important;
+    font-weight: bold !important;
+}
+
+.cusGrpGrandTotalTableRowSuccess {
+    background-color: #e7f7ed !important;
+    font-weight: bold !important;
+}
