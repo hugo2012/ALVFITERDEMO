@@ -27,6 +27,12 @@ Alv grid filter
 ```
     npm start
 ```
+### Delete Existing Dependencies:
+In the terminal, run: rm -rf node_modules
+
+Clear npm Cache: Run: npm cache clean --force
+
+Reinstall Dependencies: Run: npm install
 
 #### Pre-requisites:
 
