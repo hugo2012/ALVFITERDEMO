@@ -3,10 +3,34 @@
   controllerName="com.grid.alvdemo.controller.Main"
   xmlns:mvc="sap.ui.core.mvc"
   xmlns="sap.m"
+  xmlns:table="sap.ui.table"
   xmlns:alv="com.grid.alvdemo.control">
 <Page id="page" title="{i18n>title}">
   <VBox id="_IDGenVBox" width="100%">
     <alv:Table id="alvTable" title="Custom ALV Table" />
   </VBox>
+ <Table id="productsTable" mode="MultiSelect" items="{path: 'products>/items'}">
+        <headerToolbar>
+            <OverflowToolbar id="_IDGenOverflowToolbar">
+                <Title id="_IDGenTitle" text="Products Matrix"/>
+            </OverflowToolbar>
+        </headerToolbar>
+        <columns>
+            <Column id="_IDGenColumn"><Text id="_IDGenText" text="Product ID" /></Column>
+            <Column id="_IDGenColumn1"><Text id="_IDGenText1" text="Product Name" /></Column>
+            <Column id="_IDGenColumn2"><Text id="_IDGenText2" text="Category" /></Column>
+            <Column id="_IDGenColumn3"><Text id="_IDGenText3" text="Price" /></Column>
+        </columns>
+        <items>
+            <ColumnListItem id="_IDGenColumnListItem">
+                <cells>
+                    <Input id="_IDGenInput1" value="{products>id}" />
+                    <Input id="_IDGenInput2" value="{products>name}" />
+                    <Input id="_IDGenInput3" value="{products>category}" />
+                    <Input id="_IDGenInput4" value="{products>price}" />
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
 </Page>
 </mvc:View>
